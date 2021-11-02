@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HomePageService } from '../app/home-page.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-cce';
+  url: any;
+  constructor(private itemService: HomePageService){}
+
+  ngOnInit(): void {
+    this.getCurrencyCourse();
+  }
+  
+  getCurrencyCourse(){
+    this.itemService.getApi()
+  }
 }

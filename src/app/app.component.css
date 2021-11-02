@@ -1,0 +1,43 @@
+h1 {
+  font-size: 28px;
+  font-weight: 200;
+  color: rgb(68, 71, 71);
+}
+h2 {
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(68, 71, 71);
+  margin: 5px;
+}
+nav {
+  margin: 50px;
+}
+nav a {
+  font-size: 18px;
+  margin: 15px;
+  color: rgb(45, 123, 143);
+  border: 1px solid rgb(69, 151, 223);
+  border-radius: 15px;
+  padding: 20px;
+  transition: all ease 0.4s;
+}
+nav a:hover {
+  background-color: rgb(37, 138, 206);
+  color: #fff;
+}
+
+.select-cce, .btn-cce{
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgb(62, 168, 182);
+  transition: all ease .4s;
+  color: #fff;
+}
+
+.select-cce:hover, .btn-cce:hover{
+  transform: scale(1.1);
+}

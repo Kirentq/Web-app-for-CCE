@@ -1,0 +1,64 @@
+.currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.title {
+  flex-basis: 100%;
+  flex-direction: row !important;
+  justify-content: center;
+}
+.title p {
+  margin: 15px;
+}
+.currency div {
+  display: flex;
+  flex-direction: column;
+}
+.currency .sell {
+  flex-basis: 100px;
+}
+.buy div,
+.sell div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px;
+}
+.buy div p,
+.sell div p {
+  padding: 20px;
+  background-color: rgba(141, 142, 143, 0.219);
+  color: rgb(38, 40, 41);
+  border-radius: 3px;
+  width: 100px;
+  text-align: center;
+  border: none;
+}
+.buy div p:empty,
+.sell div p:empty {
+  background-color: #fff;
+}
+.buy div p:first-child,
+.sell div p:first-child {
+  margin-right: 40px;
+}
+.buy div p:last-child,
+.sell div p:last-child {
+  margin-right: 142px;
+}
+.btn-reload{
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  margin: 15px;
+  cursor: pointer;
+  background-color: rgb(62, 182, 116);
+  transition: all ease .4s;
+  color: #fff;
+}
+.btn-reload:hover{
+  transform: scale(1.1);
+}
